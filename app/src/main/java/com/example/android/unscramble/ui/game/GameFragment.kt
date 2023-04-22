@@ -12,9 +12,7 @@ import com.example.android.unscramble.R
 import com.example.android.unscramble.databinding.GameFragmentBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
-/**
- * Fragment where the game is played, contains the game logic.
- */
+
 class GameFragment : Fragment() {
 
     // Binding object instance with access to the views in the game_fragment.xml layout
