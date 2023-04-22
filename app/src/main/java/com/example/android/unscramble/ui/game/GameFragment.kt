@@ -48,11 +48,7 @@ class GameFragment : Fragment() {
         binding.skip.setOnClickListener { onSkipWord() }
     }
 
-    /*
-    * Checks the user's word, and updates the score accordingly.
-    * Displays the next scrambled word.
-    * After the last word, the user is shown a Dialog with the final score.
-    */
+
     private fun onSubmitWord() {
         val playerWord = binding.textInputEditText.text.toString()
 
@@ -66,11 +62,7 @@ class GameFragment : Fragment() {
         }
     }
 
-    /*
-     * Skips the current word without changing the score.
-     * Increases the word count.
-     * After the last word, the user is shown a Dialog with the final score.
-     */
+
     private fun onSkipWord() {
         if (viewModel.nextWord()) {
             setErrorTextField(false)
